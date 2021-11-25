@@ -1,0 +1,55 @@
+.modal {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 5px;
+  color: #333;
+  font-family: sans-serif;
+  line-height: 1.5;
+  max-width: 50%;
+  padding: 1rem 2rem;
+}
+
+
+
+@font-face {
+    font-family: Etelka; /* Гарнитура шрифта */
+    src: url(EtelkaPro-Bold.ttf); /* Путь к файлу со шрифтом */
+   }
+
+
+.modal a {
+  color: #bf0222;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .modal {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(200, 200, 200, 0.6);
+  }
+
+  .warning {
+    display: none;
+  }
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url("back.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	backdrop-filter: blur(15px);
+	
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
