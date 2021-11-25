@@ -43,7 +43,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 	backdrop-filter: blur(15px);
-	
+
+}
+p {
+  text-align: justify;
 }
 
 .container {
